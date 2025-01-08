@@ -48,7 +48,7 @@ const UpdateResults = () => {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 min-h-full">
       <h2 className="text-2xl font-bold font-serif text-green-950 mb-6 text-center">Update Results</h2>
 
       <form onSubmit={handleSubmit} className="space-y-6  border-yellow-500 rounded-lg bg-gray-300 p-5 border-spacing-5as mt-[2vh]">
