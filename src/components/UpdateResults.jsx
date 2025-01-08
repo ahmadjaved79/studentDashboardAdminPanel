@@ -54,7 +54,7 @@ const UpdateResults = () => {
       <form onSubmit={handleSubmit} className="space-y-6  border-yellow-500 rounded-lg bg-gray-300 p-5 border-spacing-5as mt-[2vh]">
         {/* Enrollment Number and Semester */}
         <div>
-          <label className="block text-xl font-mono font-bold text-gray-950 ">Enrollment Number</label>
+          <label className="block text-md font-mono font-bold text-gray-950 ">Enrollment Number</label>
           <input
             type="text"
             value={enrollmentNumber}
@@ -65,7 +65,7 @@ const UpdateResults = () => {
           />
         </div>
         <div>
-          <label className="block text-xl font-mono font-bold text-gray-950">Semester</label>
+          <label className="block text-md font-mono font-bold text-gray-950">Semester</label>
           <input
             type="text"
             value={semester}
@@ -78,7 +78,7 @@ const UpdateResults = () => {
 
         {/* Update Fields */}
         <div>
-          <label className="block text-xl font-mono font-bold text-gray-950">Subject Name</label>
+          <label className="block text-md font-mono font-bold text-gray-950">Subject Name</label>
           <input
             type="text"
             value={subjectName}
@@ -89,7 +89,7 @@ const UpdateResults = () => {
           />
         </div>
         <div>
-          <label className="block text-xl font-mono font-bold text-gray-950">New Grade</label>
+          <label className="block text-md font-mono font-bold text-gray-950">New Grade</label>
           <input
             type="text"
             value={newGrade}
@@ -100,7 +100,7 @@ const UpdateResults = () => {
           />
         </div>
         <div>
-          <label className="block text-xl font-mono font-bold text-gray-950">New Credits</label>
+          <label className="block text-md font-mono font-bold text-gray-950">New Credits</label>
           <input
             type="number"
             value={newCredits}

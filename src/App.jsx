@@ -22,41 +22,41 @@ const App = () => {
         >
           {/* Admin Panel Logo */}
             <div className="flex items-center mb-6 mt-[10vh]">
-            <h1 className="text-[40px] font-bold text-yellow-500">Admin Panel</h1>
+            <h1 className="text-[30px] font-bold text-yellow-500">Admin Panel</h1>
           </div>
 
           <nav className="space-y-5">
             <Link
               to="/"
-              className="block  hover:bg-green-900 text-slate-400 text-xl p-3 rounded-md font-bold font-mono"
+              className="block  hover:bg-green-900 text-slate-400 text-md p-3 rounded-md font-bold font-mono"
               onClick={() => setIsSidebarOpen(false)}
             >
               Dashboard
             </Link>
             <Link
               to="/add-results"
-              className="block text-slate-400 text-xl hover:bg-green-900   p-3 rounded-md  font-bold font-mono"
+              className="block text-slate-400 text-md hover:bg-green-900   p-3 rounded-md  font-bold font-mono"
               onClick={() => setIsSidebarOpen(false)}
             >
               Add Results
             </Link>
             <Link
               to="/view-results"
-              className="block text-slate-400 text-xl hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
+              className="block text-slate-400 text-md hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
               onClick={() => setIsSidebarOpen(false)}
             >
               View Results
             </Link>
             <Link
               to="/update-results"
-              className="block text-slate-400 text-xl hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
+              className="block text-slate-400 text-md hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
               onClick={() => setIsSidebarOpen(false)}
             >
               Update Results
             </Link>
             <Link
               to="/delete-results"
-              className="block text-slate-400 text-xl hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
+              className="block text-slate-400 text-md hover:bg-green-900  p-3 rounded-md  font-bold font-mono"
               onClick={() => setIsSidebarOpen(false)}
             >
               Delete Results

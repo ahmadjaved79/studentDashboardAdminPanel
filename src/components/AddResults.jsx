@@ -80,7 +80,7 @@ const AddResults = () => {
 >        {/* Form Inputs */}
         <div className="space-y-4 ">
           <div>
-            <label className="block text-lg font-bold text-gray-700">
+            <label className="block text-md font-bold text-gray-700">
               Enrollment Number
             </label>
             <input
@@ -94,7 +94,7 @@ const AddResults = () => {
           </div>
 
           <div>
-            <label className="block text-lg font-bold text-gray-700">
+            <label className="block text-md font-bold text-gray-700">
               Student Name
             </label>
             <input
@@ -108,7 +108,7 @@ const AddResults = () => {
           </div>
 
           <div>
-            <label className="block text-lg font-bold text-gray-700">
+            <label className="block text-md font-bold text-gray-700">
               Semester
             </label>
             <input
@@ -124,7 +124,7 @@ const AddResults = () => {
 
         {/* Subjects */}
         <div className="space-y-6">
-          <h3 className="text-lg font-bold text-gray-700">Subjects</h3>
+          <h3 className="text-md font-bold text-gray-700">Subjects</h3>
           {subjects.map((subject, index) => (
             <div
               key={index}
