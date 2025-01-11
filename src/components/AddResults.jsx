@@ -238,7 +238,7 @@ const AddResults = () => {
   );
 };
 
-// export default AddResults;
+export default AddResults;
 
 // import React, { useState } from "react";
 
