@@ -29,7 +29,6 @@ const ViewResults = () => {
       );
 
       const data = await response.json();
-      console.log(data.result.semesters.sgpa)
 
       if (response.ok) {
         setStudentData(data.result);
@@ -95,8 +94,6 @@ const ViewResults = () => {
                     <div className="flex justify-between mb-2">
                       <div className="font-bold font-mono  border-green-900 text-green-950">SGPA: {semesterData.sgpa}</div>
                       <div className="font-bold font-mono  border-green-900 text-green-950">CGPA: {semesterData.cgpa}</div>
-                      
-
                     </div>
                     <div className="flex justify-between mb-2">
                       <div className="font-bold font-mono  border-green-900 text-green-950">Current Backlogs: {semesterData.backlogs}</div>
@@ -108,7 +105,7 @@ const ViewResults = () => {
                         <tr className="bg-green-800 ">
                           <th className="border border-green px-4 py-2 text-white">Subject Code</th>
                           <th className="border border-green px-4 py-2 text-white">Subject</th>
-                          <th className="border border-green  px-4 py-2 text-white">Internal</th>
+                          <th className="border border-green px-4 py-2 text-white">Internal</th>
                           <th className="border border-green px-4 py-2 text-white">Credits</th>
                           <th className="border border-green px-4 py-2 text-white">Grade</th>
                         </tr>
@@ -119,7 +116,7 @@ const ViewResults = () => {
                             <td className="border border-green px-4 py-2 font-bold">{subject.subjectCode}</td>
                             <td className="border border-green px-4 py-2  font-bold">{subject.name}</td>
                             <td className="border border-green px-4 py-2  font-bold">{subject.internal}</td>
-                            <td className="border border-green px-4  font-bold">{subject.credits}</td>
+                            <td className="border border-green px-4  font-bold">{parseInt(subject.credits, 10)}</td> {/* Ensure integer */}
                             <td className="border border-green py-950 px-4  font-bold">{subject.grade}</td>
                           </tr>
                         ))}
@@ -137,6 +134,3 @@ const ViewResults = () => {
 };
 
 export default ViewResults;
-
-
-
